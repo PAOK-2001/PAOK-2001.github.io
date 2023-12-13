@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ortegakralpablo.github.io/paok/sitemap.xml
+Sitemap: https://PAOK-2001.github.io/paok/sitemap.xml
