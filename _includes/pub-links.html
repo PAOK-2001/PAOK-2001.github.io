@@ -1,0 +1,9 @@
+{% comment %}Paper / Website / Code links for a publication, rendered as small pill buttons.
+Usage: {% include pub-links.html pub=post %}{% endcomment %}
+{% if include.pub.pdf or include.pub.page or include.pub.code %}
+<p class="pub-links">
+  {% if include.pub.pdf %}<a class="pub-link" href="{{ include.pub.pdf }}">Paper</a>{% endif %}
+  {% if include.pub.page %}<a class="pub-link" href="{{ include.pub.page }}">Website</a>{% endif %}
+  {% if include.pub.code %}<a class="pub-link" href="{{ include.pub.code }}">Code</a>{% endif %}
+</p>
+{% endif %}

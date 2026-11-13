@@ -2,14 +2,18 @@
 
 <!-- start custom head snippets -->
 
-<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<!-- favicon: little palm tree, images/favicon.svg (PNG/ICO sizes rendered from it) -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
 <link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32"/>
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#ffffff"/>
+<script>if (window.ResizeObserver) { document.documentElement.className += " wobble-js"; }</script>
+<script src="{{ base_path }}/assets/js/wobble.js" defer onerror="document.documentElement.classList.remove('wobble-js')"></script>
+<meta name="theme-color" content="#fef1ed"/>
+<link rel="preload" href="{{ base_path }}/assets/fonts/burtons-nightmare.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ base_path }}/assets/fonts/alegreya-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
 

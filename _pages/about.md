@@ -17,6 +17,8 @@ Along the way, I have been a research intern at the Bosch Center for Artificial 
 
 # News
 
+<div class="news-card" markdown="1">
+
 |  |  |
 |:--------:|:------------|
 | **May 2026** | [RIO](https://robot-i-o.github.io/), our open-source framework for real-time robot I/O, was accepted to RSS 2026! |
@@ -24,6 +26,9 @@ Along the way, I have been a research intern at the Bosch Center for Artificial 
 | **August 2024** | I started my PhD at Carnegie Mellon University! |
 | **August 2024** | Our work [AmeliaTF](https://ameliacmu.github.io/) won the Best Student Paper Award at AIAA AVIATION 2024. |
 | **June 2024**   | Received my B.S. in *Robotics and Digital Systems Engineering* from Tec de Monterrey. |
+{: .news}
+
+</div>
 
 # Selected Publications
 
