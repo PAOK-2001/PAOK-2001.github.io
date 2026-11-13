@@ -1,0 +1,5 @@
+{% comment %}Sets `sorted_pubs`: first-author publications first, then the rest, each newest first.{% endcomment %}
+{% assign pubs_by_date = site.publications | reverse %}
+{% assign pubs_first = pubs_by_date | where_exp: "p", "p.first_author == true" %}
+{% assign pubs_rest = pubs_by_date | where_exp: "p", "p.first_author != true" %}
+{% assign sorted_pubs = pubs_first | concat: pubs_rest %}

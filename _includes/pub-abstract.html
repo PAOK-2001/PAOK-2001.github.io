@@ -1,0 +1,7 @@
+{% comment %}Collapsible abstract for a publication. Usage: {% include pub-abstract.html pub=post %}{% endcomment %}
+{% if include.pub.abstract %}
+<details class="pub-abstract">
+  <summary>Abstract</summary>
+  <p>{{ include.pub.abstract | escape }}</p>
+</details>
+{% endif %}

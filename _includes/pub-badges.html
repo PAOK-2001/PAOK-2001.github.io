@@ -1,0 +1,12 @@
+{% comment %}Badges for a publication: type (color-coded by category), venue, and distinction.
+Usage: {% include pub-badges.html pub=post %} (optional: class="pub-badges--thumb" to center under a thumbnail){% endcomment %}
+{% assign pub_type = site.publication_category[include.pub.category].badge %}
+{% assign pub_venue = include.pub.venue_short | default: include.pub.venue %}
+{% if pub_type or pub_venue or include.pub.presented or include.pub.distinction %}
+<div class="pub-badges {{ include.class }}">
+  {% if pub_type %}<span class="badge badge--{{ include.pub.category }}">{{ pub_type }}</span>{% endif %}
+  {% if pub_venue %}<span class="badge badge--venue" title="{{ include.pub.venue | escape }}">{{ pub_venue }}</span>{% endif %}
+  {% if include.pub.presented %}<span class="badge badge--venue" title="Presented at {{ include.pub.presented_full | default: include.pub.presented | escape }}">Presented at {{ include.pub.presented }}</span>{% endif %}
+  {% if include.pub.distinction %}<span class="badge badge--award"><i class="fas fa-trophy" aria-hidden="true"></i> {{ include.pub.distinction }}</span>{% endif %}
+</div>
+{% endif %}
